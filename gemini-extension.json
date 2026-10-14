@@ -1,0 +1,30 @@
+{
+  "name": "modelflare",
+  "version": "0.1.0",
+  "description": "Image and video generation in Gemini CLI with one Modelflare Smart API Key.",
+  "mcpServers": {
+    "modelflare": {
+      "command": "npx",
+      "args": ["-y", "@modelflare/mcp-server@0.1.0"],
+      "env": {
+        "MODELFLARE_SKILL": "modelflare-gemini-cli",
+        "MODELFLARE_UTM_SOURCE": "gemini-cli"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Modelflare Smart API Key",
+      "description": "One key for every image and video model available to your account. Create one at https://modelflare.dev/keys (sign up: https://modelflare.dev/sign-up?utm_source=gemini-cli&utm_medium=plugin&utm_campaign=integrations).",
+      "envVar": "MODELFLARE_API_KEY",
+      "sensitive": true
+    },
+    {
+      "name": "Modelflare base URL",
+      "description": "global (default, https://modelflare.dev/v1), china (https://origin.modelflare.dev/v1), or a custom base URL. Leave empty for global.",
+      "envVar": "MODELFLARE_BASE_URL",
+      "sensitive": false
+    }
+  ],
+  "contextFileName": "GEMINI.md"
+}

@@ -1,13 +1,13 @@
 {
   "name": "modelflare",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Image and video generation in Gemini CLI with one Modelflare Smart API Key.",
   "mcpServers": {
     "modelflare": {
       "command": "npx",
       "args": [
         "-y",
-        "@modelflare/mcp-server@0.1.1"
+        "@modelflare/mcp-server@0.1.2"
       ],
       "env": {
         "MODELFLARE_SKILL": "modelflare-gemini-cli",
